@@ -40,8 +40,8 @@ const ProductList = React.createClass({
     const products = Data.sort((a, b) => {
       return b.votes - a.votes;
     });
-    this.setState({products: products});
 
+    this.setState({products: products});
   },
   handleProductUpVote: function (productId) {
     console.log(productId + " was upvoted.");
